@@ -1,0 +1,22 @@
+{
+  "name": "bookshelf-api",
+  "version": "1.0.0",
+  "description": "Dicoding Submission Backend Untuk Pemula",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Malixl/Bookshelf-API.git"
+  },
+  "author": "malik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Malixl/Bookshelf-API/issues"
+  },
+  "homepage": "https://github.com/Malixl/Bookshelf-API#readme",
+  "dependencies": {
+    "eslint": "^8.54.0"
+  }
+}
