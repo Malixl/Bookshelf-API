@@ -16,7 +16,9 @@
     "url": "https://github.com/Malixl/Bookshelf-API/issues"
   },
   "homepage": "https://github.com/Malixl/Bookshelf-API#readme",
-  "dependencies": {
-    "eslint": "^8.54.0"
+  "devDependencies": {
+    "eslint": "^8.54.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.29.0"
   }
 }
