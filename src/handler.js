@@ -3,14 +3,7 @@ const books = require('./books');
 
 const addBookHandler = (request, h) => {
   const {
-    name,
-    year,
-    author,
-    summary,
-    publisher,
-    pageCount,
-    readPage,
-    reading,
+    name, year, author, summary, publisher, pageCount, readPage, reading,
   } = request.payload;
 
   const id = nanoid(16);
@@ -38,18 +31,7 @@ const addBookHandler = (request, h) => {
   }
 
   const newBook = {
-    id,
-    name,
-    year,
-    author,
-    summary,
-    publisher,
-    pageCount,
-    readPage,
-    finished,
-    reading,
-    insertedAt,
-    updatedAt,
+    id, name, year, author, summary, publisher, pageCount, readPage, finished, reading, insertedAt, updatedAt,
   };
 
   books.push(newBook);
@@ -176,14 +158,7 @@ const updateBookHandler = (request, h) => {
   const { bookId } = request.params;
 
   const {
-    name,
-    year,
-    author,
-    summary,
-    publisher,
-    pageCount,
-    readPage,
-    reading,
+    name, year, author, summary, publisher, pageCount, readPage, reading,
   } = request.payload;
 
   const finished = pageCount === readPage;
@@ -213,16 +188,7 @@ const updateBookHandler = (request, h) => {
   if (bookIndex !== -1) {
     books[bookIndex] = {
       ...books[bookIndex],
-      name,
-      year,
-      author,
-      summary,
-      publisher,
-      pageCount,
-      readPage,
-      finished,
-      reading,
-      updatedAt,
+      name, year, author, summary, publisher, pageCount, readPage, finished, reading, updatedAt,
     };
 
     const response = h.response({
